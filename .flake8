@@ -1,0 +1,16 @@
+[flake8]
+extend-ignore = C101
+exclude =
+    .git,
+    .idea,
+    __pycache__,
+    social-venv
+filename = *.py
+accept-encodings = utf-8
+inline-quotes = single
+max-complexity = 12
+max-line-number = 700
+max-line-length = 119
+multiline-quotes = double
+per-file-ignores:
+    /home/atrayan/Projects/social-app/socialapp/core/utils/collections.py: A005
