@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "social-app"
+version = "0.1.0"
+description = "A social media backend"
+authors = ["Atrayan"]
+readme = "README.rst"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "^5.1.1"
+djangorestframework = "^3.15.2"
+django-cors-headers = "^4.4.0"
+django-filter = "^24.3"
+django-split-settings = "^1.3.2"
+pyyaml = "^6.0.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
