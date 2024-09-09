@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 SECRET_KEY = NotImplemented
 DEBUG = False
 
@@ -51,7 +53,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',  # noqa: F821
-    }
+    },
 }
 
 # Password validation

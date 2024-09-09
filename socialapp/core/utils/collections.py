@@ -1,4 +1,7 @@
 # Update base settings with new settings
+from __future__ import annotations
+
+
 def deep_update(base_dict: dict, update_with: dict) -> dict:
 
     # Iterate over each item in the new dict

@@ -14,3 +14,4 @@ max-line-length = 119
 multiline-quotes = double
 per-file-ignores:
     /home/atrayan/Projects/social-app/socialapp/core/utils/collections.py: A005
+    /home/atrayan/Projects/social-app/socialapp/project/settings/logging.py: A005
