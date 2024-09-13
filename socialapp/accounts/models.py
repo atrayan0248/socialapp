@@ -102,3 +102,7 @@ class User:
         """
         collection = cls.get_collection()
         collection.delete_many(query)
+
+    @property
+    def id(self):
+        return self._id

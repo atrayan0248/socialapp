@@ -18,6 +18,8 @@ django-channels = "^0.7.0"
 pymongo = "^4.8.0"
 dnspython = "^2.6.1"
 drf-yasg = "^1.21.7"
+bcrypt = "^4.2.0"
+pyjwt = "^2.9.0"
 
 
 [tool.poetry.group.dev.dependencies]

@@ -1,5 +1,5 @@
 [flake8]
-extend-ignore = C101
+extend-ignore = C101, A003
 exclude =
     .git,
     .idea,
@@ -17,3 +17,5 @@ per-file-ignores:
     /home/atrayan/Projects/social-app/socialapp/project/settings/logging.py: A005
     /home/atrayan/Projects/social-app/socialapp/accounts/models.py: I201
     /home/atrayan/Projects/social-app/socialapp/project/settings/__init__.py: I201
+    /home/atrayan/Projects/social-app/socialapp/accounts/models.py: A003
+    /home/atrayan/Projects/social-app/socialapp/accounts/views.py: C901
