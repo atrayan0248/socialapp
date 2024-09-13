@@ -17,6 +17,7 @@ types-pyyaml = "^6.0.12.20240808"
 django-channels = "^0.7.0"
 pymongo = "^4.8.0"
 dnspython = "^2.6.1"
+drf-yasg = "^1.21.7"
 
 
 [tool.poetry.group.dev.dependencies]
