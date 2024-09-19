@@ -1,5 +1,5 @@
 [flake8]
-extend-ignore = C101, A003
+extend-ignore = C101, A003, B008
 exclude =
     .git,
     .idea,

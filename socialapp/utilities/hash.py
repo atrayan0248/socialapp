@@ -7,7 +7,7 @@ from socialapp.accounts.models import User
 
 
 # Define method for hashing password
-def hash_password(password: str) -> str:
+def hash_password(password: str) -> bytes:
     """
     Hashes the password using Bcrypt
     """
@@ -16,7 +16,7 @@ def hash_password(password: str) -> str:
     # Hash the password
     hashed_bytes = bcrypt.hashpw(password_bytes, bcrypt.gensalt(rounds=12))
     # Return the decoded hashed password string
-    return hashed_bytes.decode('utf-8')
+    return hashed_bytes
 
 
 # Define method for checking password
@@ -32,11 +32,11 @@ def check_password(_id: str, password: str) -> bool:
 
     hashed_password = user.password
 
-    # Convert the password from argument to bytes
+    # Convert the password from str to bytes
     password_bytes = password.encode('utf-8')
 
     # Check if the password matches
-    if not bcrypt.checkpw(password_bytes, hashed_password):
+    if not bcrypt.checkpw(password_bytes, hashed_password.encode('utf-8')):
         # If not, return False
         return False
     else:
