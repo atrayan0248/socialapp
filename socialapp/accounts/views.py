@@ -30,7 +30,7 @@ from socialapp.utilities.auth import generate_auth_token
 # Create new user view
 class UserView(APIView):
     """
-    Add, Retrieve and Update a user to/from the database
+    Class related to user CRUD operations
     """
 
     # Bypass Django Authentication

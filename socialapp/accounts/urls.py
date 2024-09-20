@@ -8,4 +8,5 @@ urlpatterns = [
     path('', UserView.as_view(), name='User API'),
     path('login', LoginView.as_view(), name='Auth Login API'),
     path('logout', LogoutView.as_view(), name='Auth Logout API'),
+    # path('details', UserDetailsView.as_view(), name='User Details API')
 ]

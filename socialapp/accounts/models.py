@@ -95,6 +95,7 @@ class User:
         phone: str,
         password: bytes,
         country_code: str,
+        details: dict = None,
         _id=None,
     ):
         self.first_name = first_name
@@ -105,6 +106,7 @@ class User:
         self.phone = phone
         self.country_code = country_code
         self._id = _id if _id else ObjectId()
+        self.details = details
 
     @classmethod
     def get_collection(cls):
@@ -143,6 +145,7 @@ class User:
                         'email': self.email,
                         'phone': self.phone,
                         'country_code': self.country_code,
+                        'details': self.details,
                     },
                 },
             )
@@ -185,6 +188,7 @@ class User:
             phone=document['phone'],
             country_code=document['country_code'],
             _id=document['_id'],
+            details=document['details'],
         )
 
     @classmethod
